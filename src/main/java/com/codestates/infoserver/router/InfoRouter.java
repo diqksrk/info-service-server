@@ -15,7 +15,7 @@ public class InfoRouter {
     @Bean
     public RouterFunction<ServerResponse> router(InfoHandler infoHandler) {
         return RouterFunctions.route()
-                .GET("/job", infoHandler::jobHanldler)
+                .GET("/info-service/job", infoHandler::jobHanldler)
                 .build();
     }
 }
